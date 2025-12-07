@@ -1,4 +1,4 @@
-🚀 Terraform Day 2: Understanding Providers — The Bridge Between Code and Cloud
+##🚀 Terraform Day 2: Understanding Providers — The Bridge Between Code and Cloud
 
 “Terraform alone does nothing. Providers make Terraform powerful.”
 
