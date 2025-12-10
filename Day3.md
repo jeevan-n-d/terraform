@@ -115,3 +115,4 @@ Destroyed
 
 Tomorrow: More automation 🔥
 
+<img width="1844" height="871" alt="Screenshot from 2025-12-10 05-23-27" src="https://github.com/user-attachments/assets/e252812e-bb2b-4776-ae7b-89351685ad62" />
