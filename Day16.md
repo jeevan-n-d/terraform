@@ -1,4 +1,4 @@
-###MAIN 
+# MAIN 
 resource "aws_iam_user" "users" {
     for_each = { for user in local.users : user.first_name => user }  
 
@@ -30,7 +30,7 @@ resource "aws_iam_user_login_profile" "users" {
 
 
 
-###OUTPUT
+# OUTPUT
 output "account_id" {
   value = data.aws_caller_identity.name
 }
@@ -49,8 +49,8 @@ output "user_passwords" {
 }
 
 
-###GROUP
-# Create IAM Groups
+# GROUP
+#Create IAM Groups
 resource "aws_iam_group" "education" {
   name = "Education"
   path = "/groups/"
@@ -66,7 +66,7 @@ resource "aws_iam_group" "engineers" {
   path = "/groups/"
 }
 
-# Add users to the Education group
+#Add users to the Education group
 resource "aws_iam_group_membership" "education_members" {
   name  = "education-group-membership"
   group = aws_iam_group.education.name
@@ -76,7 +76,7 @@ resource "aws_iam_group_membership" "education_members" {
   ]
 }
 
-# Add users to the Managers group
+#Add users to the Managers group
 resource "aws_iam_group_membership" "managers_members" {
   name  = "managers-group-membership"
   group = aws_iam_group.managers.name
@@ -86,7 +86,7 @@ resource "aws_iam_group_membership" "managers_members" {
   ]
 }
 
-# Add users to the Engineers group
+#Add users to the Engineers group
 resource "aws_iam_group_membership" "engineers_members" {
   name  = "engineers-group-membership"
   group = aws_iam_group.engineers.name
