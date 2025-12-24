@@ -50,7 +50,7 @@ output "user_passwords" {
 
 
 # GROUP
-#Create IAM Groups
+#Create IAM Groups#
 resource "aws_iam_group" "education" {
   name = "Education"
   path = "/groups/"
